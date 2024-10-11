@@ -1,1 +1,3 @@
-document.body.style.display = 'none';
+document.addEventListener('DOMContentLoaded', function() {
+   document.body.style.display = 'none';
+});
