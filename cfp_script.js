@@ -1,2 +1,1 @@
-
-$('body').hide();
+document.body.style.display = 'none';
