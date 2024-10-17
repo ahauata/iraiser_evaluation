@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+function deleteTOS() {
   const footerLinks = document.querySelectorAll(
     "footer a[href*='conditions-generales']"
   );
@@ -9,4 +9,10 @@ document.addEventListener("DOMContentLoaded", function () {
       parentLi.remove();
     }
   });
-});
+}
+
+document.onreadystatechange = () => {
+  if (document.readyState == "complete") {
+    deleteTOS();
+  }
+};
